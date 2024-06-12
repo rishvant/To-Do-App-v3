@@ -26,13 +26,13 @@ const Items = () => {
                     </div>
                     <p className="text-xl font-semibold w-[30%] break-words">{item.todoDate}</p>
                     <div className="w-[20%] flex flex-row gap-2 flex-wrap justify-center">
-                    <button className="w-fit h-fit rounded-md px-2 py-1 border-2 border-blue-600 bg-blue-600 transition-all text-2xl text-white hover:text-blue-600 hover:bg-white"><MdEdit /></button>
-                    <button type="button" className="w-fit h-fit rounded-md px-2 py-1 border-2 border-red-600 bg-red-600 text-white transition-all text-2xl hover:text-red-600 hover:bg-white" onClick={() => handleDelete(item.todoDate)}><RiDeleteBinLine /></button>
-                        </div>
+                        <button className="w-fit h-fit rounded-md px-2 py-1 border-2 border-blue-600 bg-blue-600 transition-all text-2xl text-white hover:text-blue-600 hover:bg-white"><MdEdit /></button>
+                        <button type="button" className="w-fit h-fit rounded-md px-2 py-1 border-2 border-red-600 bg-red-600 text-white transition-all text-2xl hover:text-red-600 hover:bg-white" onClick={() => handleDelete(item.todoDate)}><RiDeleteBinLine /></button>
+                    </div>
                 </div>
             ))}
         </div>
-    )
+    );
 }
 
 export default Items;
